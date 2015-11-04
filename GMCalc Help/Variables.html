@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>@import url(style.css);</style>
+</head>
+<body>
+<h1>Variables</h1>
+<strong>Variables</strong> allow you to store numbers and equations for reuse. There are two system-defined variables available:<br /><br />
+<pre>
+ans	Contains the resulting value from the last executed equation
+last	Contains the original text of the last equation
+</pre><br />
+Note that repeated use of <code>last</code> (i.e. by repeating the same equation over and over) may result in program lag, as the resultant equation will become longer and longer. To give an example:<br /><br />
+<pre>
+2d4
+-> now 'Last' contains '2d4'
+2d(Last)
+-> now 'Last' contains '2d(2d4)'
+2d(Last)
+-> now 'Last' contains '2d(2d(2d4))'
+etc
+</pre><br />
+Use responsibly.<br /><br />
+You can define your own variables using the <strong>Variable Editor</strong> available from the <strong>Tools</strong> menu. Select a variable by left-clicking to edit. Insert a variable into your current equation or delete a variable from the list by right-clicking on its row and selecting the appropriate option.<br /><br />
+<strong>Note:</strong> <code>ans</code> and <code>last</code> cannot be altered or deleted.
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>@import url(style.css);</style>
+</head>
+<body>
+<h1>Equations</h1>
+<strong>Equations</strong> are the core of GMCalc. Every calculation-even one as simple as <code>2d6</code> takes the form of an equation. GMCalc's equation parser breaks apart the string you entered into a series of values. For example:<br /><br />
+<pre>
+2d6+1
+-> 2d6+1
+   ^ ^ ^
+   | | |> modifier
+   | |> number of faces on each die
+   |> number of dice
+</pre><br />
+More complex expressions can be constructed with the use of parentheses and variables. For example:<br /><br />
+<pre>
+(2d7)d(4d(2d5))+(2d3)
+</pre><br />
+This equation would roll a die with 4d(2d5) faces (a number determined by rolling a die with 2d5 faces 4 times) 2d7 times, and then adding a 2d3 modifier. With the use of variables such as <code>last</code>, this example can be made even more absurd.</code>
+<br /><br />
+<strong>Operators</strong><br />
+The following operators are available:<br /><br />
++<br />
+-<br />
+*<br />
+/<br />
+% (modulus)<br />
+^ (exponent)<br />
+</body>
+</html>

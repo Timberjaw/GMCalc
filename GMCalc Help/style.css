@@ -1,0 +1,11 @@
+* { margin: 0px; padding: 0px; }
+body {
+	padding: 10px;
+	font-family: Calibri, Trebuchet MS, sans-serif;
+}
+
+h1 { font-family: Cambria, Georgia, serif; padding-bottom: 5px; border-bottom: solid #000000 1px; margin-bottom: 10px; }
+
+code, pre { font-family: Courier New; }
+
+ol li { list-style: decimal outside; }
